@@ -1,3 +1,4 @@
+require 'rspec'
 require 'rspec/matchers'
 
 module PaperclipMatchers
