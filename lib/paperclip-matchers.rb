@@ -2,7 +2,7 @@ require 'rspec'
 require 'rspec/matchers'
 
 module PaperclipMatchers
-  include Rspec::Matchers
+  include RSpec::Matchers
 
   def validate_attachment_presence( attribute )
     Matcher.new :validate_attachment_presence, attribute do |_attribute_|
@@ -14,6 +14,6 @@ module PaperclipMatchers
   end
 end
 
-Rspec.configure do |c|
+RSpec.configure do |c|
   c.include PaperclipMatchers
 end
